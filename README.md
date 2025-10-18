@@ -1,26 +1,56 @@
-# Todo Website
+# 📝 Todo Website
 
-[![Spring Boot](https://img.shields.io/badge/SpringBoot-2.7.0-green)](https://spring.io/projects/spring-boot)
-[![Java](https://img.shields.io/badge/Java-21-blue)](https://www.oracle.com/java/)
-[![Thymeleaf](https://img.shields.io/badge/Thymeleaf-3.1-orange)](https://www.thymeleaf.org/)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-purple)](https://getbootstrap.com/)
-[![MySQL](https://img.shields.io/badge/MySQL-8.0-lightblue)](https://www.mysql.com/)
-[![Lombok](https://img.shields.io/badge/Lombok-1.18.28-red)](https://projectlombok.org/)
+![Java](https://img.shields.io/badge/Language-Java-orange?logo=openjdk)
+![Spring Boot](https://img.shields.io/badge/Framework-SpringBoot-brightgreen)
+![Thymeleaf](https://img.shields.io/badge/Template-Thymeleaf-blue)
+![Bootstrap](https://img.shields.io/badge/Frontend-Bootstrap-purple)
+![MySQL](https://img.shields.io/badge/Database-MySQL-blue?logo=mysql)
+![Lombok](https://img.shields.io/badge/Library-Lombok-red)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
----
-
-## Introduction
-This is my **first project using Spring Boot, Thymeleaf, Bootstrap, Lombok, and JPA**.  
-The goal was to create a simple yet functional Todo management web application where users can add, view, mark as done, and delete tasks.  
-This project helped me learn **integrating backend and frontend technologies** and dynamically rendering pages with **Thymeleaf**.
+This is my **first Spring Boot project**, built using **Spring Boot, Thymeleaf, Bootstrap, JPA, MySQL, and Lombok**.  
+It’s a simple **Todo Management Web App** where users can add tasks, mark them as completed, view pending/completed tasks separately, and delete tasks.  
+The frontend is dynamic and responsive, built entirely with **Thymeleaf + Bootstrap**.
 
 ---
 
-## Features
-- Add new tasks using an input form.  
-- View all tasks in a clean, responsive layout.  
-- Mark tasks as **Completed**, which updates the style to strikethrough.  
-- Delete individual tasks.  
-- Separate page for viewing completed tasks.  
-- Responsive UI with **Bootstrap 5**.  
-- Database interaction using **Spring Data JPA** and **MySQL**.
+## 🧩 Tech Stack
+
+| Category | Technology |
+|-----------|-------------|
+| **Frontend** | Thymeleaf, Bootstrap, HTML |
+| **Backend** | Spring Boot, Java |
+| **Database** | MySQL |
+| **ORM** | JPA (Hibernate) |
+| **Libraries** | Lombok |
+| **IDE** | IntelliJ IDEA (or any preferred IDE) |
+
+---
+
+## ⚙️ Requirements
+> Runs smoothly on any PC  
+
+You just need:
+- JDK 21 or above  
+- Spring Boot  
+- MySQL Server  
+- Thymeleaf
+- Lombok plugin installed in IDE
+
+---
+
+## 🚀 Features
+
+### ✅ User Features
+- 📝 **Add Tasks** through a responsive input form  
+- ✔️ **Mark Tasks as Completed** with strikethrough effect  
+- 🗑️ **Delete Tasks** individually  
+- 📋 **View Pending and Completed Tasks** separately  
+- 🎨 **Responsive UI** with Bootstrap styling  
+
+### 🛠️ Technical Highlights
+- 🗃️ **Database Integration** using JPA/Hibernate  
+- 🌐 **Dynamic HTML Rendering** with Thymeleaf  
+- 🔧 **Service Layer** to handle business logic  
+- 🧩 **Bootstrap Components** for layout and styling  
+- ⚡ **Lombok** for reducing boilerplate code in entities and services
