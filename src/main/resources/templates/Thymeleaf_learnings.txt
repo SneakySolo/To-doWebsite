@@ -1,0 +1,20 @@
+- th:each="task : ${tasks}"
+
+task → is a temporary variable that represents a single element of that list while looping.
+tasks → is the name of the attribute that your controller added using model.addAttribute("tasks", tasks);
+
+- ${ ... } refers to data passed from Java → HTML.
+
+- @{ ... } — for URLs or links
+
+- @RequestParam’s variable name must match the name attribute in the HTML form.
+
+- | Purpose           | Thymeleaf Syntax                          | Notes                 |
+  | ----------------- | ----------------------------------------  | --------------------- |
+  | Looping           | `th:each="task : ${tasks}"`               | Loops over all tasks  |
+  | Print a value     | `th:text="${task.task}"`                  | Shows the task name   |
+  | Conditional check | `th:if="${task.status}=='Done'"`          | Renders only if true  |
+  | Link building     | `th:href="@{/{id}/done(id=${task.id})}"'  | Dynamic URLs          |
+  | Send form data    | `<input name="taskTitle">`                | Name must match       |
+  | Data to HTML      | `model.addAttribute("tasks", list)`       | Always case-sensitive |
+
