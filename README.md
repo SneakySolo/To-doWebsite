@@ -54,3 +54,8 @@ You just need:
 - 🔧 **Service Layer** to handle business logic  
 - 🧩 **Bootstrap Components** for layout and styling  
 - ⚡ **Lombok** for reducing boilerplate code in entities and services
+
+---
+
+## Demo
+  https://github.com/user-attachments/assets/19695b80-1b92-4570-bcb9-cd435d8ad76d
