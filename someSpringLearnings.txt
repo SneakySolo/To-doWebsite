@@ -1,0 +1,34 @@
+TOTALY UNRELATED for you but required for me.
+In case I need t brush up my springboot, here is some notes I made while making a different project (Patient demo) -
+
+here I will explain what is happening
+
+at first the client send data to the Controller and the request parameter is PatientsDTO
+there (at the PatientsDTO) the client enters all the req fields,
+the return type is PatientsResponseDTO as keeping Patients there will expose sensitive data to clients
+and so we keep PatientsResponseDTO there as that is what we want to show,
+lastly the return is service.savePatients(dto).
+
+in the Service Layer,
+var patient = mapper.toEntity(dto); converts the DTO (data from user) to Entity which can be saved in the DB,
+var savedPatient = repo.save(patient); here the Entity is saved in the DB
+and then we return mapper.toResponseDTO(savedPatient); in which the entity is turned back to a DTO
+because we only reveal partial data to client
+
+now since first when DTO to Entity happened there the PatientRepo was used, it talks to DB using JPA
+
+also the Patients is a representation of the Table in DB.
+
+Layers -
+    Control Layer - here client sends us data
+    Service Layer - called by Control Layer
+                  - here the DTO-Entity-DB-ResponseDTO happens
+
+    Mapper        - called by Service Layer to converts DTO → Entity
+    Repository    - called by Service Layer to save to DB
+
+    Database      - called by Repository to perform SQL operations
+
+    and then again,
+    Mapper        - called by Service (again) to convert to ResponseDTO
+    Control Layer - atlas returns ResponseDTO
